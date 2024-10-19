@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class SqsMessageConsumer {
 
-    @SqsListener("test-queue-sqs-1")
+    @SqsListener("test-sqs-queue-1")
     public void receiveMessage(String message) {
         log.info("Received message: {}", message);
     }
